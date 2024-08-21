@@ -47,6 +47,7 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="background-color: aqua"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -94,7 +95,7 @@
     </a>
 
     <!-- Two Equal Divs -->
-    <div class="content">
+    <div class="content animate-on-scroll">
       <div>
         <div class="image">
           <img src="PPic.jpg" alt="My Profile Photo" class="ppic" />
@@ -139,7 +140,13 @@
           </p>
           <p style="padding-left: 20px">
             "contact":
-            <span class="string">"charansrinivas51514@gmail.com"</span>,
+            <span class="string"
+              ><a
+                href="mailto:charansrinivas51514@gmail.com"
+                style="text-decoration: none; color: aquamarine"
+                >mailme</a
+              ></span
+            >,
           </p>
           <p>}</p>
         </div>
@@ -149,23 +156,21 @@
     <h2 class="gsh" id="GS">GitHub Stats</h2>
     <hr />
     <br />
-    <div class="gstats">
+    <div class="gstats animate-on-scroll section-slide">
       <div class="gcards">
         <picture>
           <source
             srcset="
-              https://github-readme-stats.vercel.app/api?username=CharanTejaBS-cherrypy&show_icons=true&theme=dark
+              https://github-readme-stats.vercel.app/api?username=CharanTejaBS-cherrypy&show_icons=true&theme=transparent
             "
-            media="(prefers-color-scheme: gruvbox)"
           />
           <source
             srcset="
-              https://github-readme-stats.vercel.app/api?username=CharanTejaBS-cherrypy&show_icons=true
+              https://github-readme-stats.vercel.app/api?username=CharanTejaBS-cherrypy&show_icons=true&theme=transparent
             "
-            media="(prefers-color-scheme: gruvbox), (prefers-color-scheme: no-preference)"
           />
           <img
-            src="https://github-readme-stats.vercel.app/api?username=CharanTejaBS-cherrypy&show_icons=true"
+            src="https://github-readme-stats.vercel.app/api?username=CharanTejaBS-cherrypy&show_icons=true&theme=transparent"
             class="im1"
           />
         </picture>
@@ -185,7 +190,7 @@
     <hr />
     <h2 class="sh" id="S">Skills</h2>
     <hr />
-    <div class="si">
+    <div class="si animate-on-scroll">
       <img src="python.png" alt="python" class="sim" title="Python" />
       <img src="django.png" alt="" class="sim" title="Django" />
       <img
@@ -208,7 +213,7 @@
     <hr />
     <h2 class="ph" id="P">Projects</h2>
     <hr />
-    <div class="prs">
+    <div class="prs animate-on-scroll section-rotate">
       <a href="https://github.com/CharanTejaBS-cherrypy/ConnecTech" class="a">
         <div class="p">
           <div class="pd"><h3 class="pdh">Full Stack</h3></div>
@@ -277,7 +282,7 @@
     <hr />
     <h2 class="lph" id="LP">LinkedIn</h2>
     <hr />
-    <div class="lh">
+    <div class="lh animate-on-scroll">
       <img src="LINKEDINpi1.png" alt="LinkedIn Post Impressions" class="li1" />
       <img src="LINKEDINpi2.png" alt="" class="li1" id="li2" />
     </div>
@@ -285,14 +290,14 @@
     <hr />
     <h2 class="mme" id="M">Mail-ME</h2>
     <hr />
-    <a href="mailto:charansrinivas51514@gmail.com" class="ml"
+    <a href="mailto:charansrinivas51514@gmail.com" class="ml animate-on-scroll"
       ><span class="mto"
         >Click On This Box To Mail Me Something , It Will Redirect You To GMail
         !!</span
       ></a
     >
 
-    <div id="circle" class="circle"></div>
+    <!-- <div id="circle" class="circle"></div> -->
     <hr />
     <footer>
       <div class="social-icons">
