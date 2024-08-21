@@ -1,7 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Stylish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+
+.grey-qo-regular {
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.supermercado-one-regular {
+  font-family: "Supermercado One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.stylish-regular {
+  font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background-color: rgb(0, 0, 20);
+  background-color: rgb(3, 24, 44);
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -18,10 +41,11 @@ body {
   font-size: 1.8rem;
   color: white;
   transition: color 0.3s ease;
+  font-family: "Supermercado One", cursive;
 }
 
 .navbar-brand:hover {
-  color: rgb(100, 100, 255);
+  color: rgb(53, 228, 255);
 }
 
 .nav-link {
@@ -31,7 +55,8 @@ body {
 }
 
 .nav-link:hover {
-  color: rgb(100, 100, 255) !important;
+  color: rgb(53, 228, 255) !important;
+  text-decoration: double overline 1px rgba(0, 255, 234, 0.475);
 }
 
 .ppic {
@@ -44,8 +69,8 @@ body {
 
 .ppic:hover {
   transform: scale(1.1);
-  border: rgb(100, 100, 255) 6px double;
-  box-shadow: rgb(100, 100, 255) 0px 0px 6px;
+  border: rgb(53, 228, 255) 6px double;
+  box-shadow: rgb(53, 228, 255) 0px 0px 6px;
   transition: ease-in-out 0.5s;
 }
 
@@ -74,11 +99,17 @@ body {
 .content > div {
   flex: 1;
   padding: 0.75rem; /* Reduced padding */
-  background-color: rgb(10, 10, 40);
+  background-color: rgb(26, 53, 62);
   color: white;
   margin: 1rem; /* Reduced margin */
   border-radius: 10px;
   min-height: 300px; /* Set a specific height */
+  border: #00e5ff 2px double;
+}
+
+.content > div:hover {
+  box-shadow: #00e5ff 0px 0px 10px;
+  transition: linear 0.4s;
 }
 
 .image {
@@ -100,14 +131,14 @@ body {
 }
 
 .console {
-  background-color: rgb(20, 20, 50);
+  background-color: rgb(20, 39, 50);
   padding: 0.75rem; /* Reduced padding */
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .console-header {
-  background-color: rgb(50, 50, 80);
+  background-color: rgb(2, 31, 39);
   padding: 0.5rem;
   border-radius: 8px 8px 0 0;
   color: #bbb;
@@ -117,7 +148,7 @@ body {
 
 .console-body {
   padding: 0.75rem; /* Reduced padding */
-  background-color: rgb(30, 30, 60);
+  background-color: rgb(0, 86, 101);
   color: #fff;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9rem; /* Reduced font size */
@@ -175,7 +206,7 @@ body {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    filter: drop-shadow(#7b00ff 0px 0px 2px);
+    filter: drop-shadow(#00c3ff 0px 0px 2px);
     border-radius: 4px !important;
   }
   .up {
@@ -185,10 +216,10 @@ body {
     position: fixed;
     bottom: 120px !important;
     right: 20px !important;
-    filter: drop-shadow(#7b00ff 0px 0px 2px);
+    filter: drop-shadow(#00d0ff 0px 0px 2px);
     border-radius: 4px !important;
     padding: 10px;
-    background-color: #2a2561;
+    background-color: #086268;
   }
   .prs {
     display: flex;
@@ -200,14 +231,14 @@ body {
     margin: 20px;
     width: 320px !important;
     height: auto;
-    background-color: #a283d7;
+    background-color: #304f5b;
     display: flex;
     justify-content: center;
     border-radius: 10px !important;
   }
   .pd {
     margin: 10px !important;
-    background-color: #9436ff;
+    background-color: #2d7a8f;
     height: 40px !important;
     border-radius: 10px !important;
   }
@@ -254,16 +285,16 @@ body {
 }
 
 .resume:hover {
-  box-shadow: #ff00f7 1px 2px 1px;
+  box-shadow: #00e5ff 1px 2px 1px;
 }
 hr {
-  border-color: #ff00f7;
+  border-color: #00f2ff;
   margin: 10px 20px;
   border-width: 4px;
-  box-shadow: #ff00f7 0px 0px 10px;
+  box-shadow: #00ffae 0px 0px 10px;
   border-radius: 50%;
 }
-.circle {
+/* .circle {
   width: 40px;
   height: 40px;
   background: linear-gradient(to top left, #8255ff, #9436ff);
@@ -275,7 +306,7 @@ hr {
   pointer-events: none;
   mix-blend-mode: multiply;
   z-index: 10;
-}
+} */
 .gstats {
   display: flex;
   align-items: center;
@@ -292,7 +323,7 @@ hr {
 .ph,
 .mme {
   text-align: center;
-  color: #6ddf67;
+  color: #00ffc8;
 }
 .gcontrib {
   margin-top: 40px;
@@ -338,7 +369,7 @@ hr {
   filter: saturate(1.6);
   border-radius: 10px;
   padding: 10px;
-  background-color: #6030c9;
+  background-color: #68a6b2;
 }
 .prs {
   display: flex;
@@ -353,20 +384,22 @@ hr {
   color: inherit;
 }
 .p {
+  color: rgb(180, 255, 234);
   margin: 10px 40px;
   width: 200px;
   height: 200px;
-  background-color: #a394cb;
+  background-color: #0c393f;
   border-radius: 20px 20px 20px 20px;
   overflow-x: hidden;
   overflow-y: auto;
 }
 .pd {
+  color: #00ffc3;
   height: 40px;
   width: 200px;
   position: absolute;
   margin-bottom: 0px;
-  background-color: #9436ff;
+  background-color: #007284;
   border-radius: 20px 20px 0px 0px;
   z-index: 10;
 }
@@ -415,6 +448,14 @@ hr {
   margin: 10px 30px;
   cursor: crosshair;
 }
+.li1:hover {
+  border: #00f7ff 2px groove;
+  box-shadow: #00708a 0px 0px 4px;
+  transition: ease-in-out 0.5s;
+  transform: scale(1.2);
+  border-radius: 10px;
+  z-index: 100000000;
+}
 #li2 {
   width: 500px;
 }
@@ -422,14 +463,14 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e1b5ff92;
+  background-color: #b5e9ff92;
   margin: 20px 50px;
   padding: 20px;
   border-radius: 20px;
 }
 .ml {
   text-decoration: none;
-  color: #59005a;
+  color: #00282e;
 }
 /* RESUME BUTTON 
       
@@ -472,7 +513,9 @@ hr {
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  filter: drop-shadow(rgb(0, 255, 234) 0px 0px 4px);
+  transition: linear 0.5s;
 }
 
 .github {
@@ -504,11 +547,59 @@ hr {
 footer {
   margin: 0px;
   background-image: linear-gradient(
-    90deg,
-    rgb(20, 0, 38),
-    rgb(29, 0, 43),
-    rgb(30, 0, 39),
-    rgb(23, 1, 47)
+    0deg,
+    rgb(0, 36, 43),
+    rgb(0, 70, 78),
+    /* rgb(0, 36, 43), */ /* rgb(0, 38, 39), */ rgb(0, 69, 69),
+    rgb(0, 36, 43)
   );
   padding: 40px 0px;
+}
+
+/* Define animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-30deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+/* Animation class to be added dynamically */
+.animate {
+  animation: fadeIn 3s ease-out forwards; /* Default animation */
+}
+
+/* Specific animations for different sections */
+.section-slide {
+  animation: slideIn 5s ease-out forwards;
+}
+
+.section-rotate {
+  animation: fadeIn 4s ease-out forwards;
 }
