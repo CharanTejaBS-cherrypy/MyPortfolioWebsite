@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
-Allow: /public/
+Disallow: /private/
+Allow: /
 Sitemap: https://charanteja.co/sitemap.xml
