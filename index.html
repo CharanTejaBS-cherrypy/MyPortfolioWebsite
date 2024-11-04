@@ -123,12 +123,17 @@
     <div class="content animate-on-scroll">
       <div>
         <div class="image">
-          <img
-            src="PPic.jpg"
-            alt="Profile Photo of Charan Teja B S"
-            class="ppic"
-          />
-        </div>
+  <picture>
+    <!-- First image (primary source) -->
+    <img
+      src="Profile.jpg"
+      alt="Profile Photo of Charan Teja B S"
+      class="ppic"
+      onerror="this.onerror=null; this.src='PPic.jpg';"
+    />
+  </picture>
+</div>
+
         <h5 class="about">
           Driven by a passion for data science and mastery in Python, I excel in
           crafting innovative solutions that harness the power of multilingual
